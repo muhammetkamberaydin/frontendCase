@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Uygulaması</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <script src="assets/js/jquery-3.6.0.min.js"></script> 
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="titleRowProp mt-5">
+            <div class="col-6">
+                <h3 class="tittleProp">QUIZ APP</h3>
+            </div>
+            <div class="col-6">
+                <div class="timer" style="float: right;">Süre: <span class="time">30</span> saniye</div>
+            </div>
+        </div>
+        <div class="row mainRow mt-5 mb-5 align-items-center">
+            <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12">
+                <div class="imgPropDiv">
+                    <img src="assets/img/design.svg" alt="">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-7 col-md-12">
+                <div style="text-align: center;">
+                    <button class="btn btn-primary start-btn">Quiz'e Başla</button>
+                </div>
+                <div class="quiz-container">
+                    <div class="question-number"></div>
+                    <div class="question"></div>
+                    <div class="options"></div>
+                    <button class="next-btn">Sonraki Soru</button>
+                </div>
+                <div class="warningMessageDiv">
+                <p>
+                    Lütfen bir cevap seçiniz!
+                </p>    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10 col-md-12">
+                <div class="result-container">
+                    <h2 class="sonuclar">İşaretlenenler Tablosu:</h2>
+                    <table class="result-table">
+                        <thead>
+                            <tr>
+                                <th>Soru No</th>
+                                <th>Cevap</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>
